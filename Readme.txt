@@ -1,0 +1,1 @@
+Attempt to hook onto function which reads weapon speeds in TESIV Oblivion, using COEF-Basic-Example and Microsoft Detours 4.0.

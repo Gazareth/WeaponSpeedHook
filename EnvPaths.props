@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets">
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros">
+    <COEFPATH>S:\Steam\steamapps\common\Oblivion\Data\OBSE\Plugins\COEF</COEFPATH>
+    <OBSEPATH>S:\Steam\steamapps\common\Oblivion_MOD_STUFF\Experimentation\OBSE_SRC\0021_Ilde\src</OBSEPATH>
+    <OBLIVIONPATH>S:\Steam\steamapps\common\Oblivion</OBLIVIONPATH>
+  </PropertyGroup>
+  <PropertyGroup>
+    <_ProjectFileVersion>14.0.25431.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <PreprocessorDefinitions>SOLUTIONNAME=$(SolutionName);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <BuildMacro Include="COEFPATH">
+      <Value>$(COEFPATH)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="OBSEPATH">
+      <Value>$(OBSEPATH)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="OBLIVIONPATH">
+      <Value>$(OBLIVIONPATH)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+  </ItemGroup>
+</Project>
